@@ -7,17 +7,34 @@
   "scripts": {
     "lint": "eslint *.ts*",
     "build": "rollup --config",
-    "dev": "pnpm run build -- --watch"
+    "dev": "npm run build"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.5.0",
     "@types/react": "^18.2.5",
     "@types/react-dom": "^18.2.4",
+    "autoprefixer": "^10.4.16",
+    "css-loader": "^6.8.1",
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
+    "postcss-css-variables": "^0.19.0",
+    "postcss-scss": "^4.0.9",
+    "postcss-simple-vars": "^7.0.1",
     "react": "^18.2.0",
     "rollup": "^2.79.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-scss": "^4.0.0",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
     "tsconfig": "*",
     "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "path": "^0.12.7",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-scss": "^4.0.0",
+    "swiper": "^11.0.3"
   }
 }
