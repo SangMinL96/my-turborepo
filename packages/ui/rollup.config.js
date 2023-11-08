@@ -15,10 +15,9 @@ export default {
     typescript(),
     postcss({
       extract: "styles.scss",
-      use:[
+      use: [
         'sass'
       ],
-      plugins: [auto, simple(), simple2()]
     }),
   ],
 };
