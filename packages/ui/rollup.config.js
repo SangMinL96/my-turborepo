@@ -6,7 +6,7 @@ import simple2 from 'postcss-css-variables'
 import path from "path";
 
 export default {
-  input: "index.tsx",
+  input: ["index.tsx", "./assets/images/common"],
   output: {
     file: "dist/index.js",
     format: "cjs",
