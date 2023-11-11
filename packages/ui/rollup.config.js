@@ -6,7 +6,7 @@ import simple2 from 'postcss-css-variables'
 import path from "path";
 
 export default {
-  input: ["index.tsx", "./assets/images/common"],
+  input: "index.tsx",
   output: {
     file: "dist/index.js",
     format: "cjs",
@@ -14,10 +14,8 @@ export default {
   plugins: [
     typescript(),
     postcss({
-      extract: "styles.scss",
-      use: [
-        'sass'
-      ],
+      extract: "styles.css",
+      plugins: [auto, simple(), simple2()]
     }),
   ],
 };
